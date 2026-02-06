@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexAI — Современные ИИ-технологии</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__mark">◆</span>
+        <span class="logo__text">NexAI</span>
+      </a>
+      <nav class="nav">
+        <a href="#benefits" class="nav__link">Возможности</a>
+        <a href="#features" class="nav__link">Технологии</a>
+        <a href="#use-cases" class="nav__link">Применение</a>
+        <a href="#about" class="nav__link">О нас</a>
+      </nav>
+      <button class="cta-button cta-button--header">Начать</button>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#benefits" class="mobile-nav__link">Возможности</a>
+      <a href="#features" class="mobile-nav__link">Технологии</a>
+      <a href="#use-cases" class="mobile-nav__link">Применение</a>
+      <a href="#about" class="mobile-nav__link">О нас</a>
+      <button class="cta-button">Начать</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+        <div class="hero__glow hero__glow--3"></div>
+        <div class="hero__particles" id="particles"></div>
+      </div>
+      <div class="container hero__content">
+        <p class="hero__label">Искусственный интеллект нового поколения</p>
+        <h1 class="hero__title">
+          Будущее<br>
+          <span class="hero__title-accent">уже здесь</span>
+        </h1>
+        <p class="hero__subtitle">Инновационные решения для бизнеса и творчества. NexAI объединяет передовые нейросети с простым интерфейсом — технологии будущего доступны уже сегодня.</p>
+        <div class="hero__actions">
+          <button onclick="window.location.href='https://x.com/?lang=tr'" class="cta-button cta-button--primary">Узнать больше</button>
+          <button class="cta-button cta-button--ghost" onclick="window.location.href='./Demo/index.html'">Демо</button>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>Листай</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="intro" id="intro">
+      <div class="container" data-animate>
+        <p class="intro__text">NexAI — это платформа нового поколения, которая делает искусственный интеллект доступным для каждой команды. Мы разрабатываем инструменты, способные анализировать данные, генерировать контент и оптимизировать процессы в режиме реального времени.</p>
+      </div>
+    </section>
+
+    <!-- Benefits Slider -->
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <h2 class="section__title">Почему ИИ</h2>
+        <p class="section__subtitle">Ключевые преимущества технологий искусственного интеллекта для вашего бизнеса</p>
+        <div class="slider">
+          <div class="slider__track" id="sliderTrack">
+            <div class="slider__slide">
+              <div class="benefit-card">
+                <div class="benefit-card__icon">⚡</div>
+                <h3 class="benefit-card__title">Скорость</h3>
+                <p class="benefit-card__text">Мгновенная обработка данных</p>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="benefit-card">
+                <div class="benefit-card__icon">◇</div>
+                <h3 class="benefit-card__title">Точность</h3>
+                <p class="benefit-card__text">Аналитика без погрешностей</p>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="benefit-card">
+                <div class="benefit-card__icon">◈</div>
+                <h3 class="benefit-card__title">Масштаб</h3>
+                <p class="benefit-card__text">Безграничные возможности</p>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="benefit-card">
+                <div class="benefit-card__icon">◎</div>
+                <h3 class="benefit-card__title">Адаптивность</h3>
+                <p class="benefit-card__text">Обучение в реальном времени</p>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="benefit-card">
+                <div class="benefit-card__icon">◆</div>
+                <h3 class="benefit-card__title">Интеллект</h3>
+                <p class="benefit-card__text">Глубокое понимание контекста</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider__nav">
+            <button class="slider__btn slider__btn--prev" id="sliderPrev" aria-label="Назад">←</button>
+            <div class="slider__dots" id="sliderDots"></div>
+            <button class="slider__btn slider__btn--next" id="sliderNext" aria-label="Вперёд">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section__title">Технологии</h2>
+        <p class="section__subtitle">Движок NexAI строится на четырёх столпах современного ИИ</p>
+        <div class="features__grid">
+          <article class="feature-card" data-animate>
+            <div class="feature-card__blur"></div>
+            <div class="feature-card__content">
+              <span class="feature-card__num">01</span>
+              <h3 class="feature-card__title">Machine Learning</h3>
+              <p class="feature-card__text">Самообучающиеся алгоритмы, которые улучшаются с каждым запросом. Прогнозирование, классификация и поиск паттернов в больших объёмах данных.</p>
+            </div>
+          </article>
+          <article class="feature-card" data-animate>
+            <div class="feature-card__blur"></div>
+            <div class="feature-card__content">
+              <span class="feature-card__num">02</span>
+              <h3 class="feature-card__title">Natural Language</h3>
+              <p class="feature-card__text">Понимание и генерация человеческой речи. От чат-ботов до анализа тональности и автоматического перевода на десятки языков.</p>
+            </div>
+          </article>
+          <article class="feature-card" data-animate>
+            <div class="feature-card__blur"></div>
+            <div class="feature-card__content">
+              <span class="feature-card__num">03</span>
+              <h3 class="feature-card__title">Computer Vision</h3>
+              <p class="feature-card__text">Распознавание образов, лиц и объектов. Обработка видео в реальном времени, медицинская диагностика и умный контроль качества.</p>
+            </div>
+          </article>
+          <article class="feature-card" data-animate>
+            <div class="feature-card__blur"></div>
+            <div class="feature-card__content">
+              <span class="feature-card__num">04</span>
+              <h3 class="feature-card__title">Generative AI</h3>
+              <p class="feature-card__text">Создание текста, изображений, кода и музыки. Генеративные модели открывают новые горизонты для креативных индустрий.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="use-cases" id="use-cases">
+      <div class="container">
+        <h2 class="section__title">Применение</h2>
+        <p class="section__subtitle">ИИ уже трансформирует целые индустрии — от медицины до маркетинга</p>
+        <div class="use-cases__grid">
+          <article class="use-case-card" data-animate>
+            <span class="use-case-card__icon">▸</span>
+            <h3 class="use-case-card__title">Бизнес и аналитика</h3>
+            <p class="use-case-card__text">Автоматизация отчётов, прогнозирование спроса, выявление аномалий. ИИ помогает принимать решения на основе данных за секунды вместо недель.</p>
+          </article>
+          <article class="use-case-card" data-animate>
+            <span class="use-case-card__icon">▸</span>
+            <h3 class="use-case-card__title">Маркетинг и креатив</h3>
+            <p class="use-case-card__text">Персонализированные рассылки, генерация рекламных материалов, A/B-тестирование. Масштабируйте креатив без потери качества.</p>
+          </article>
+          <article class="use-case-card" data-animate>
+            <span class="use-case-card__icon">▸</span>
+            <h3 class="use-case-card__title">Разработка</h3>
+            <p class="use-case-card__text">Автодополнение кода, рефакторинг, генерация тестов. ИИ ускоряет разработку и снижает количество ошибок.</p>
+          </article>
+          <article class="use-case-card" data-animate>
+            <span class="use-case-card__icon">▸</span>
+            <h3 class="use-case-card__title">Поддержка клиентов</h3>
+            <p class="use-case-card__text">Умные чат-боты 24/7, анализ обращений, маршрутизация запросов. Сокращайте время ответа и повышайте удовлетворённость клиентов.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <h2 class="section__title">Как начать</h2>
+        <p class="section__subtitle">Три простых шага до первых результатов</p>
+        <div class="steps">
+          <article class="step" data-animate>
+            <span class="step__num">1</span>
+            <h3 class="step__title">Регистрация</h3>
+            <p class="step__text">Создайте аккаунт за минуту. Бесплатный план позволяет протестировать основные возможности без привязки карты.</p>
+          </article>
+          <article class="step" data-animate>
+            <span class="step__num">2</span>
+            <h3 class="step__title">Подключение</h3>
+            <p class="step__text">Выберите нужные API и интегрируйте их в свой продукт. Документация и готовые SDK ускорят внедрение.</p>
+          </article>
+          <article class="step" data-animate>
+            <span class="step__num">3</span>
+            <h3 class="step__title">Масштабирование</h3>
+            <p class="step__text">От прототипа к production. Наши модели масштабируются автоматически под вашу нагрузку.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parallax Section -->
+    <section class="parallax-section" id="about">
+      <div class="parallax-section__layer parallax-section__layer--1" data-parallax="0.3"></div>
+      <div class="parallax-section__layer parallax-section__layer--2" data-parallax="0.5"></div>
+      <div class="parallax-section__layer parallax-section__layer--3" data-parallax="0.7"></div>
+      <div class="container parallax-section__content" data-animate>
+        <h2 class="parallax-section__title">Инновации сегодня — реальность завтра</h2>
+        <p class="parallax-section__text">Мы создаём технологии, которые меняют мир. NexAI объединяет исследователей, разработчиков и бизнес, чтобы искусственный интеллект работал на благо людей — предсказуемо, прозрачно и эффективно.</p>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" id="stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stat-card" data-animate>
+            <span class="stat-card__value" data-count="99">0</span>
+            <span class="stat-card__suffix">%</span>
+            <p class="stat-card__label">Точность</p>
+          </div>
+          <div class="stat-card" data-animate>
+            <span class="stat-card__value" data-count="10">0</span>
+            <span class="stat-card__suffix">M+</span>
+            <p class="stat-card__label">Запросов в день</p>
+          </div>
+          <div class="stat-card" data-animate>
+            <span class="stat-card__value" data-count="150">0</span>
+            <span class="stat-card__suffix">+</span>
+            <p class="stat-card__label">Стран</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" data-animate>
+      <div class="container">
+        <h2 class="cta-section__title">Готовы к будущему?</h2>
+        <p class="cta-section__text">Присоединяйтесь к тысячам команд, которые уже используют NexAI. Начните бесплатно — никаких обязательств.</p>
+        <button class="cta-button cta-button--primary cta-button--large" onclick="window.location.href='./404/index.html'">Присоединиться</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="logo logo--footer">
+            <span class="logo__mark">◆</span>
+            <span class="logo__text">NexAI</span>
+          </a>
+          <p class="footer__desc">Современные ИИ-технологии для бизнеса и творчества. Инновации, которые работают.</p>
+        </div>
+        <nav class="footer__nav">
+          <a href="#benefits" class="footer__link">Возможности</a>
+          <a href="#features" class="footer__link">Технологии</a>
+          <a href="#use-cases" class="footer__link">Применение</a>
+          <a href="#about" class="footer__link">О нас</a>
+          <a href="#" class="footer__link">Контакты</a>
+        </nav>
+        <div class="footer__social">
+          <a href="https://x.com/?lang=tr" class="footer__social-link" aria-label="Twitter">TW</a>
+          <a href="https://www.instagram.com/?hl=ru" class="footer__social-link" aria-label="LinkedIn">IN</a>
+          <a href="https://github.com/?ysclid=mlaritf2hc417328061" class="footer__social-link" aria-label="GitHub">GH</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 NexAI. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
